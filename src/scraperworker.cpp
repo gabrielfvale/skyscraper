@@ -527,6 +527,10 @@ void ScraperWorker::run() {
         if (!forceEnd) {
             forceEnd = limitReached(output);
         }
+        if (game.found && !cacheScraper && !config.cacheFolder.isEmpty()) {
+            output.append("\033[1;34m---- Writing to cache ----\033[0m\n");
+            cache->write();
+        }
         game.calculateCompleteness(config.videos, config.manuals);
         game.resetMedia();
         emit entryReady(game, output, debug);
