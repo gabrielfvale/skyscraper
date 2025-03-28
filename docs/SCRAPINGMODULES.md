@@ -21,14 +21,14 @@ over a table cell to display the scraper as tooltip:
 | [MobyGames](#mobygames)                    |        ✓ {title='MobyGames'}        |        ✓ {title='MobyGames'}        |        ✓ {title='MobyGames'}        |        ✓ {title='MobyGames'}        |        ✓ {title='MobyGames'}        |        ✓ {title='MobyGames'}        |        ✓ {title='MobyGames'}        |        ✓ {title='MobyGames'}        |        ✓ {title='MobyGames'}        |        ✓ {title='MobyGames'}        |        ✓ {title='MobyGames'}        |        &nbsp; {title='MobyGames'}        |        &nbsp; {title='MobyGames'}        |        &nbsp; {title='MobyGames'}        |        &nbsp; {title='MobyGames'}        |        &nbsp; {title='MobyGames'}        |        &nbsp; {title='MobyGames'}        |
 | [OpenRetro](#openretro)                    |        ✓ {title='OpenRetro'}        |        ✓ {title='OpenRetro'}        |        ✓ {title='OpenRetro'}        |        ✓ {title='OpenRetro'}        |        ✓ {title='OpenRetro'}        |        ✓ {title='OpenRetro'}        |        ✓ {title='OpenRetro'}        |        ✓ {title='OpenRetro'}        |     &nbsp; {title='OpenRetro'}      |        ✓ {title='OpenRetro'}        |        ✓ {title='OpenRetro'}        |        &nbsp; {title='OpenRetro'}        |        &nbsp; {title='OpenRetro'}        |          ✓ {title='OpenRetro'}           |        &nbsp; {title='OpenRetro'}        |        &nbsp; {title='OpenRetro'}        |        &nbsp; {title='OpenRetro'}        |
 | [ScreenScraper](#screenscraper)            |      ✓ {title='ScreenScraper'}      |      ✓ {title='ScreenScraper'}      |      ✓ {title='ScreenScraper'}      |      ✓ {title='ScreenScraper'}      |      ✓ {title='ScreenScraper'}      |      ✓ {title='ScreenScraper'}      |      ✓ {title='ScreenScraper'}      |      ✓ {title='ScreenScraper'}      |      ✓ {title='ScreenScraper'}      |      ✓ {title='ScreenScraper'}      |      ✓ {title='ScreenScraper'}      |        ✓ {title='ScreenScraper'}         |        ✓ {title='ScreenScraper'}         |        ✓ {title='ScreenScraper'}         |        ✓ {title='ScreenScraper'}         |        ✓ {title='ScreenScraper'}         |      See ³ {title='ScreenScraper'}       |
-| [The Games DB](#thegamesdb-tgdb)           |      ✓ {title='The Games DB'}       |      ✓ {title='The Games DB'}       |      ✓ {title='The Games DB'}       |      ✓ {title='The Games DB'}       |      ✓ {title='The Games DB'}       |      ✓ {title='The Games DB'}       |      ✓ {title='The Games DB'}       |      ✓ {title='The Games DB'}       |      ✓ {title='The Games DB'}       |      ✓ {title='The Games DB'}       |      ✓ {title='The Games DB'}       |      &nbsp; {title='The Games DB'}       |         ✓ {title='The Games DB'}         |         ✓ {title='The Games DB'}         |      &nbsp; {title='The Games DB'}       |      &nbsp; {title='The Games DB'}       |       See ³ {title='The Games DB'}       |
+| [The Games DB](#thegamesdb-tgdb)           |      ✓ {title='The Games DB'}       |      ✓ {title='The Games DB'}       |      ✓ {title='The Games DB'}       |      ✓ {title='The Games DB'}       |      ✓ {title='The Games DB'}       |      ✓ {title='The Games DB'}       |      ✓ {title='The Games DB'}       |    &nbsp; {title='The Games DB'}    |      ✓ {title='The Games DB'}       |      ✓ {title='The Games DB'}       |      ✓ {title='The Games DB'}       |      &nbsp; {title='The Games DB'}       |         ✓ {title='The Games DB'}         |         ✓ {title='The Games DB'}         |      &nbsp; {title='The Games DB'}       |      &nbsp; {title='The Games DB'}       |       See ³ {title='The Games DB'}       |
 | [World of Spectrum](#world-of-spectrum)    |    ✓ {title='World of Spectrum'}    |    ✓ {title='World of Spectrum'}    |    ✓ {title='World of Spectrum'}    |    ✓ {title='World of Spectrum'}    |    ✓ {title='World of Spectrum'}    |    ✓ {title='World of Spectrum'}    |    ✓ {title='World of Spectrum'}    | &nbsp; {title='World of Spectrum'}  | &nbsp; {title='World of Spectrum'}  |    ✓ {title='World of Spectrum'}    |    ✓ {title='World of Spectrum'}    |    &nbsp; {title='World of Spectrum'}    |    &nbsp; {title='World of Spectrum'}    |    &nbsp; {title='World of Spectrum'}    |    &nbsp; {title='World of Spectrum'}    |    &nbsp; {title='World of Spectrum'}    |    &nbsp; {title='World of Spectrum'}    |
+| Coverage                                   |                10/10                |                10/10                |                9/10                 |                10/10                |                9/10                 |                10/10                |                10/10                |                7/10                 |                7/10                 |                10/10                |                10/10                |                   4/10                   |                   4/10                   |                   5/10                   |                   3/10                   |                   2/10                   |                                          |
 
 **Remarks**:  
  ¹ Skyscraper uses ArcadeDB's Flyer and as a failsafe the Title screen, as Arcade games usually where not sold in a box  
  ² GameBase provides only an adult flag, thus it is either 18 or no age rating  
  ³ Planned for a future release of Skyscraper
-
 
 ### Recognized Keywords in Query
 
@@ -183,7 +183,7 @@ It is _required_ to register with the Twitch dev program (IGDB is owned by Twitc
 - [Enable](https://www.twitch.tv/settings/security) two-factor authentication (required)
 - [Register](https://dev.twitch.tv/console/apps/create) an application (call it whatever you like)
 - [Manage](https://dev.twitch.tv/console/apps) the application
-- Add `http://localhost` as OAuth redirect URL
+- Add `https://localhost` as OAuth redirect URL
 - Generate a secret-key by clicking `New secret`
 - Add your client-id and secret-key pair to the Skyscraper config ini (`/home/<USER>/.skyscraper/config.ini`):
 
@@ -250,7 +250,7 @@ Read a thorough description of this module [here](IMPORT.md).
 - User credential support: _None required_
 - API request limit: _None_
 - Thread limit: 1
-- Platform support: For those platforms where the community has compiled a GameBase database, several dozen platforms do have a GameBase database. Some examples: Commodore Machines (VC-20,C64,Plus/4,Amiga), Sinclair Spectrum ("Speccy"), ...
+- Platform support: For those platforms where the community has compiled a GameBase database, several dozen platforms do have a GameBase database. Some examples: Commodore Machines (VC-20,C64,Plus/4,Amiga), Sinclair Spectrum ("Speccy"), see the [most comprehensive list](http://gb64.com/forum/viewtopic.php?f=10&p=31353)
 - Media support: _`cover`, `screenshot`_
 - Example use: `Skyscraper -p zxspectrum -s gamebase`
 
